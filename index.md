@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Parroit javascript blog
+tagline: A blog about javascript awesome things
 ---
 {% include JB/setup %}
 
