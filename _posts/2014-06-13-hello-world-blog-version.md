@@ -9,9 +9,11 @@ tags: [about-blog]
 
 # Hello world, blog version
 
-Hi people, this the first post of my new blog.
-I named it `Hello world`, because I'm basically using it to 
-try [jekyllbootstrap](http://jekyllbootstrap.com/) features.
+### TL;DR
+
+    Hi people, this the first post of my new blog.
+    I named it `Hello world`, because I'm basically using it to 
+    try [jekyllbootstrap](http://jekyllbootstrap.com/) features.
 
 ## What I'm doing in this post
 
@@ -53,4 +55,5 @@ I just changed _config.yml file, adding following line at the root level:
 markdown: kramdown
 ```
 
+and I'm now no more receiving e-mails as I push changes...
 
