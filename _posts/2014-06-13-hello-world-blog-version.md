@@ -23,7 +23,9 @@ I'm writing this post while I improve the blog status, so I'll include:
 * some explanation of what I'll write in this blog
 * some presentation about myself
 
-So, start with the first point, about JB:
+So, start with the first point...
+
+## About JB:
 
 I start following [the quick-start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html) step by step.
 It was really easy to get started, the tutorial promise 3 minutes to be up and running, but it's been
@@ -56,4 +58,23 @@ markdown: kramdown
 ```
 
 and I'm now no more receiving e-mails as I push changes...
+
+## Interlude: about me
+
+I'm not an english native speaker, so please pardon my english if it'll 
+become to error prone...
+
+By the way:
+
+1. I hope to improve it by writing this blog
+2. I hope to that JB has a way to setup a grammatical correction tool
+
+## Back to JB
+
+### Ok, let's continue improving the basic blog layout
+
+Second step: I wish to improve the layout, because there is by default an annoyng 
+_AROUND THE WEB_ section above my post.
+
+
 
