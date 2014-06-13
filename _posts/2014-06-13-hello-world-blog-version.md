@@ -134,6 +134,7 @@ This step is very easy. I just wrote my Google analytics UID under
 ### My info
 
 Finally, I setup my blog info, always in _config.yml file, under keys 
-`author`, `title` and `tagline`
+`author`, `title` and `tagline` and done some clean-up of home page, editing
+file `index.md`
 
 
