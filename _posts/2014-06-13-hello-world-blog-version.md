@@ -115,7 +115,10 @@ I really like Disqus, so I configure it. First, I create a Disqus account,
 once done, it was a matter of writing my account name in `_config.yml` file
 under comments.disqus key.
 
+### Change domain name
 
+It's now time to publish the blog on my new domain: __parro.it__
+I'll follow the [GH tutorial](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages) on the topic
 
 
 
