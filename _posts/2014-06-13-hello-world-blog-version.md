@@ -45,3 +45,12 @@ And gosh... I receive the same e-mail each time I publish a change to the post..
 
 So I now start to migrate my-pages-site-from-maruku as suggested.
 
+The upgrade appear to be very simple: 
+
+I just changed _config.yml file, adding following line at the root level:
+
+```
+markdown: kramdown
+```
+
+
