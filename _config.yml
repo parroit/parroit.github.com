@@ -8,13 +8,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : Parroit blog
+tagline: A blog about javascript awesome things
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : Andrea Parodi
+  email : me@parro.it
+  github : parroit
+  twitter : parroit
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -101,7 +101,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-51928027-1'
     getclicky :
       site_id : 
     mixpanel :

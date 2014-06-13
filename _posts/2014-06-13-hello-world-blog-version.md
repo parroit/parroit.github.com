@@ -120,5 +120,20 @@ under comments.disqus key.
 It's now time to publish the blog on my new domain: __parro.it__
 I'll follow the [GH tutorial](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages) on the topic
 
+This is the trickiest part till now. COnfigure the www host was easy, but I cannot 
+make the `http://parro.it` work. 
+
+So, by now the www is pretty fine...
+let's proceed with 
+
+### Analytics configuration
+
+This step is very easy. I just wrote my Google analytics UID under 
+`analytics.google.tracking_id` key in _config.yml file.
+
+### My info
+
+Finally, I setup my blog info, always in _config.yml file, under keys 
+`author`, `title` and `tagline`
 
 
