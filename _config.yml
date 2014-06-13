@@ -84,6 +84,7 @@ JB :
     provider : disqus
     disqus :
       short_name : parroit
+      disqus_url: www.parro.it
     livefyre :
       site_id : 123
     intensedebate :
