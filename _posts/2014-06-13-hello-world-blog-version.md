@@ -41,5 +41,7 @@ Some minutes later, I received an e-mail from GH, stating this:
 
     If you have any questions please contact us at https://github.com/contact.
 
+And gosh... I receive the same e-mail each time I publish a change to the post...
+
 So I now start to migrate my-pages-site-from-maruku as suggested.
 
