@@ -135,6 +135,44 @@ This step is very easy. I just wrote my Google analytics UID under
 
 Finally, I setup my blog info, always in _config.yml file, under keys 
 `author`, `title` and `tagline` and done some clean-up of home page, editing
-file `index.md`
+file `index.md`.
+
+### Conclusion
+
+Within some hours of work, I've been able to setup a decent new blog,
+and to write a somehow long first post... JB was really helpful and practical.
+
+Now, as I said, some word about me, what I do and what I'll write here.
+I'll try to be syntetic, because it's now late night
+
+#Parroit
+
+It's me... I'm a 38 year old italian programmer. I actually work 
+4 days a week as a javascript consultant for a big italian company, 1 day a week
+as a python consultant for a little italian company, and in my spare time
+I:
+
+1. wrote javascript OSS modules that I publish on npm
+2. build a new house
+3. meet with my friends, my parents
+4. setup blogs like this
+
+#This blog
+
+I'll write here about:
+
+1. js modules I'll write or I've written and published
+2. new technology I'll discover and use making (1)
+3. other crazy stuff
+
+Next step:
+
+1. write a todo page
+2. write an ideas page
+3. publish a post on [gulp-jsxify](https://github.com/parroit/gulp-jsxify)
+
+<3
+
+parroit
 
 
