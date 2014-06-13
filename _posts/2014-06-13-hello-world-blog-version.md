@@ -76,5 +76,26 @@ By the way:
 Second step: I wish to improve the layout, because there is by default an annoyng 
 _AROUND THE WEB_ section above my post.
 
+Ok, it appear to be a Disqus features. I read about it [on Disqus site](https://help.disqus.com/customer/portal/articles/666278-introducing-promoted-discovery-and-f-a-q-) and maybe it will be useful to atract traffic on my pages...
+
+### So, I'll continue by changing the blog theme
+
+JB come with some predefined simple themes, but it's possible to install new ones,
+as [explained here](http://jekyllbootstrap.com/usage/jekyll-theming.html)
+
+I quickly look at [themes explorer](http://themes.jekyllbootstrap.com/) to choose one.
+I really like `the-program` theme. Installing it is a matter of seconds:
+
+I just click on `Install Theme` on the explorer page, and run on my terminal
+the suggested rake command:
+
+```
+rake theme:install git="https://github.com/jekyllbootstrap/theme-the-program.git"
+```
+
+The command clone the theme repository under my themes folder from GH, ask me if I want to switch
+theme now (Yes, I wanted). I git add newly added content, commit, and push.
+
+
 
 
