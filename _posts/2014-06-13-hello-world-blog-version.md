@@ -105,6 +105,15 @@ a sampe post, that I find to be annoying, so I'll remove it.
 
 I just delete `core-samples` folder, commit and push, and the post is gone. Thery easy.
 
+### Enabling comments.
+
+Comments are an important part of each blog, so I'm proceding by enabling them
+as [explained here](http://jekyllbootstrap.com/usage/blog-configuration.html#toc_3)
+
+There are some different provider to choose for comments management.
+I really like Disqus, so I configure it. First, I create a Disqus account,
+once done, it was a matter of writing my account name in `_config.yml` file
+under comments.disqus key.
 
 
 
