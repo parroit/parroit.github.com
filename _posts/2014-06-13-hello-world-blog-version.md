@@ -96,6 +96,17 @@ rake theme:install git="https://github.com/jekyllbootstrap/theme-the-program.git
 The command clone the theme repository under my themes folder from GH, ask me if I want to switch
 theme now (Yes, I wanted). I git add newly added content, commit, and push.
 
+Voila, new theme online. Really better than the default JB one.
+
+### Remove examples section.
+
+In my blog, there is now two posts: this one, that I'll keep, and 
+a sampe post, that I find to be annoying, so I'll remove it.
+
+I just delete `core-samples` folder, commit and push, and the post is gone. Thery easy.
+
+
+
 
 
 
