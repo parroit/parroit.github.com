@@ -19,7 +19,7 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 * To install it: npm install --save-dev gulp-jsxify
 * Usage: 
 
-    {% highlight javscript %}
+```
     var gulp = require('gulp');
     var jsxify = require('gulp-jsxify');
 
@@ -33,7 +33,7 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
             }))
             .pipe(gulp.dest('./jsx-files'));
     });
-    {% endhighlight %}
+```
 
 
 
@@ -70,4 +70,15 @@ and I already configure gulp to transpile theme to javascript, using gulp-react 
 
 What if I could automate all boilerplate with a new plugin? What it has to do
 is simply take jsx code, wrap it in a function, insert the jsx preable `/** @jsx React.DOM */`
+and needed requires for external React widgets.
+
+It appear the last thing was the most difficult to do, because it has to be 
+configurable by the user of the plugin.
+
+I think to make it configurable using an option I pass to the plugin
+in my `gulp.js` file. This option is an object that contains a key-value pair 
+for each tag used: the key is the name of tag, the value is the path to the module.
+
+I then build requires looping though this object. It appar to be practical  enough,
+So I start 
 
