@@ -19,8 +19,6 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 * To install it: npm install --save-dev gulp-jsxify
 * Usage: 
 
-
-```
 {% highlight javscript %}
 var gulp = require('gulp');
 var jsxify = require('gulp-jsxify');
@@ -36,7 +34,7 @@ gulp.task('default', function() {
         .pipe(gulp.dest('./jsx-files'));
 });
 {% endhighlight %}
-```
+
 
 
 ## A jsx introduction
@@ -53,6 +51,11 @@ using [this tool from react](http://fb.me/JSXTransformer-0.10.0.js).
 
 ## React workflow
 
-I start using React for a side-project of mines some week ago. I find it really awesome, but
-some 
+I start using React for a side-project of mines some week ago. 
+I find it really awesome, but after have done some work, I start feeling
+bad about using jsx inside my files.
+
+I first try to use vanilla js to build my templates, but it was unpractical.
+
+So 
 
