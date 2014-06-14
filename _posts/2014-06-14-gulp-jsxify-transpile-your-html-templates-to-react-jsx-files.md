@@ -20,7 +20,7 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 * Usage: 
 
 
-```javascript
+```
 var gulp = require('gulp');
 var jsxify = require('gulp-jsxify');
 
