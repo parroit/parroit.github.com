@@ -19,20 +19,21 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 * To install it: npm install --save-dev gulp-jsxify
 * Usage: 
 
+.
 
-        var gulp = require('gulp');
-        var jsxify = require('gulp-jsxify');
-
-        gulp.task('default', function() {
-            
-            return gulp.src('template.html')
-                .pipe(jsxify({
-                    requires:{
-                        AnotherWidget: './another-widget'
-                    }
-                }))
-                .pipe(gulp.dest('./jsx-files'));
-        });
+    var gulp = require('gulp');
+    var jsxify = require('gulp-jsxify');
+    
+    gulp.task('default', function() {
+        
+        return gulp.src('template.html')
+            .pipe(jsxify({
+                requires:{
+                    AnotherWidget: './another-widget'
+                }
+            }))
+            .pipe(gulp.dest('./jsx-files'));
+    });
 
 
 
@@ -89,7 +90,21 @@ The requires approach has a problem. It require configured React widgets in all
 templates, even if not used. When you start to have a bunch of widgets, this start to cause
 circular dependency, breaking my project.
 
+So, I solve this problem by checking each file code for used tags, and only include
+used one. It was easy, because each tag match a key in my plugin option.
+
+Good, circular dependency resolved!
 
 
+### Second problem: React handle all html5 tags
+
+I lied, it was not resolved: in first iteration, I always include React as a default 
+dependency in produced js files, because it is used to traspile all html5 tags.
+
+This was fine, by it is now causing problem, because I now have a lot of tag that 
+doesn't directly map to a key in my option file.
+
+So I revert to check if a tag is one of html5 or a custom one:
+To do this, I used practical
 
 
