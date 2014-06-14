@@ -19,7 +19,7 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 * To install it: npm install --save-dev gulp-jsxify
 * Usage: 
 
-```
+
     var gulp = require('gulp');
     var jsxify = require('gulp-jsxify');
 
@@ -33,7 +33,7 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
             }))
             .pipe(gulp.dest('./jsx-files'));
     });
-```
+
 
 
 
@@ -79,6 +79,17 @@ I think to make it configurable using an option I pass to the plugin
 in my `gulp.js` file. This option is an object that contains a key-value pair 
 for each tag used: the key is the name of tag, the value is the path to the module.
 
-I then build requires looping though this object. It appar to be practical  enough,
-So I start 
+I then build requires looping though this object. It appear to be practical  enough,
+so I wrote the plugin, edit my gulp file, and start to move my templates code to 
+html.
+
+### First problem: circular dependency
+
+The requires approach has a problem. It require configured React widgets in all
+templates, even if not used. When you start to have a bunch of widgets, this start to cause
+circular dependency, breaking my project.
+
+
+
+
 
