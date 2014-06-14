@@ -10,7 +10,7 @@ tags: ['gulp','tools','react','jsx']
 
 # [gulp](http://gulpjs.com)-jsxify
 
-### TL;DR
+## TL;DR
 
 Hi people, as promised yesterday, here is a post about my last published npm module: 
 gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.github.io/react/docs/jsx-in-depth.html) format.
@@ -18,6 +18,7 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 * Find it on [npmjs here](https://www.npmjs.org/package/gulp-jsxify)
 * To install it: npm install --save-dev gulp-jsxify
 * Usage: 
+
 
 ```javascript
 var gulp = require('gulp');
@@ -37,7 +38,7 @@ gulp.task('default', function() {
 ```
 
 
-## Some introduction about jsx
+## A jsx introduction
 
 Jsx is a transpiler from Facebook that allow to include xml inside javascript, and have it compiled
 to vanilla javascript. It someway resemble Scala inline XML, but applied to javascript.
