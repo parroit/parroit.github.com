@@ -21,6 +21,7 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 
 
 ```
+{% highlight javscript %}
 var gulp = require('gulp');
 var jsxify = require('gulp-jsxify');
 
@@ -34,18 +35,24 @@ gulp.task('default', function() {
         }))
         .pipe(gulp.dest('./jsx-files'));
 });
-
+{% endhighlight %}
 ```
 
 
 ## A jsx introduction
 
 Jsx is a transpiler from Facebook that allow to include xml inside javascript, and have it compiled
-to vanilla javascript. It someway resemble Scala inline XML, but applied to javascript.
+to vanilla javascript. Here is an [example of input and output](http://facebook.github.io/react/jsx-compiler.html)
 
+It someway resemble Scala inline XML, but applied to javascript.
 __If you don't know Scala lang, here you'll find [an excellent post on it's XML inline feature](http://www.eishay.com/2009/05/scala-and-xml-part-1.html)__
 
 Jsx is thought to be paired with React, allowing you to insert your template markup directly into your
-main javascript react files.
+main javascript react files. You can then transpile your jsx files to vanilla js 
+using [this tool from react](http://fb.me/JSXTransformer-0.10.0.js).
 
+## React workflow
+
+I start using React for a side-project of mines some week ago. I find it really awesome, but
+some 
 
