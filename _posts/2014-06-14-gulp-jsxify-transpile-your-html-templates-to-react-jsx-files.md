@@ -23,7 +23,7 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 
     var gulp = require('gulp');
     var jsxify = require('gulp-jsxify');
-    
+
     gulp.task('default', function() {
         
         return gulp.src('template.html')
@@ -105,6 +105,20 @@ This was fine, by it is now causing problem, because I now have a lot of tag tha
 doesn't directly map to a key in my option file.
 
 So I revert to check if a tag is one of html5 or a custom one:
-To do this, I used practical
+To do this, I used the practical [html-tags npm module, by Sindre Sorhus](http://github.com/sindresorhus/html-tags)
+that exports an array containing all defined html5 elements tags.
+
+## Conclusion
+
+Ok, it finally works. The plugin is now published on NPM, I hope that others will find it useful...
+
+By the way, here is my project using it: [github.com/parroit/billpanel](https://github.com/parroit/billpanel)
+you'll find there all the html templates, and the gulp file I used to generate them.
+
+
+
+
+
+
 
 
