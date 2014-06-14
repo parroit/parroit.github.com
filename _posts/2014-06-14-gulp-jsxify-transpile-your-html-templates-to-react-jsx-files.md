@@ -19,21 +19,21 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 * To install it: npm install --save-dev gulp-jsxify
 * Usage: 
 
-{% highlight javscript %}
-var gulp = require('gulp');
-var jsxify = require('gulp-jsxify');
+    {% highlight javscript %}
+    var gulp = require('gulp');
+    var jsxify = require('gulp-jsxify');
 
-gulp.task('default', function() {
-    
-    return gulp.src('template.html')
-        .pipe(jsxify({
-            requires:{
-                AnotherWidget: './another-widget'
-            }
-        }))
-        .pipe(gulp.dest('./jsx-files'));
-});
-{% endhighlight %}
+    gulp.task('default', function() {
+        
+        return gulp.src('template.html')
+            .pipe(jsxify({
+                requires:{
+                    AnotherWidget: './another-widget'
+                }
+            }))
+            .pipe(gulp.dest('./jsx-files'));
+    });
+    {% endhighlight %}
 
 
 
@@ -61,4 +61,13 @@ So I thought of moving template markup to separate files.
 After all, they compile to vanilla javascript, so it's possible to move them away to their
 own commonjs modules, exporting a simple function that return the template markup,
 given used parameter as argument.
+
+### The gulp plugin idea
+
+So, after moving some template to its own file, the gulp plugin idea arise.
+Each template file has the same structure: it export a function containing jsx,
+and I already configure gulp to transpile theme to javascript, using gulp-react plugin.
+
+What if I could automate all boilerplate with a new plugin? What it has to do
+is simply take jsx code, wrap it in a function, insert the jsx preable `/** @jsx React.DOM */`
 
