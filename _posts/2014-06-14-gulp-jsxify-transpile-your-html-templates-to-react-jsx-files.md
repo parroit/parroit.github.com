@@ -55,7 +55,10 @@ I start using React for a side-project of mines some week ago.
 I find it really awesome, but after have done some work, I start feeling
 bad about using jsx inside my files.
 
-I first try to use vanilla js to build my templates, but it was unpractical.
+I first try to use vanilla js to build my templates, but find it to be unpractical.
 
-So 
+So I thought of moving template markup to separate files.
+After all, they compile to vanilla javascript, so it's possible to move them away to their
+own commonjs modules, exporting a simple function that return the template markup,
+given used parameter as argument.
 
