@@ -1,13 +1,3 @@
----
-layout: post
-title: "gulp-jsxify: transpile your html templates to react jsx files"
-description: ""
-category: 
-tags: ['gulp','tools','react','jsx']
----
-{% include JB/setup %}
-
-
 # [gulp](http://gulpjs.com)-jsxify
 
 ## TL;DR
