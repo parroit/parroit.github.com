@@ -9,22 +9,22 @@ gulp-jsxify, a module to transpile html files to [Facebook jsx](http://facebook.
 * To install it: npm install --save-dev gulp-jsxify
 * Usage: 
 
-.
 
-    var gulp = require('gulp');
-    var jsxify = require('gulp-jsxify');
+```js
+var gulp = require('gulp');
+var jsxify = require('gulp-jsxify');
 
-    gulp.task('default', function() {
-        
-        return gulp.src('template.html')
-            .pipe(jsxify({
-                requires:{
-                    AnotherWidget: './another-widget'
-                }
-            }))
-            .pipe(gulp.dest('./jsx-files'));
-    });
-
+gulp.task('default', function() {
+    
+    return gulp.src('template.html')
+        .pipe(jsxify({
+            requires:{
+                AnotherWidget: './another-widget'
+            }
+        }))
+        .pipe(gulp.dest('./jsx-files'));
+});
+```
 
 
 
