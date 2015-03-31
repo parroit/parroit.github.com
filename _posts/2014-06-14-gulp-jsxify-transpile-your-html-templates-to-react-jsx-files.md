@@ -4,9 +4,8 @@
 
 
 ```js
-
-var gulp = require('gulp');
-var jsxify = require('gulp-jsxify');
+    var gulp = require('gulp');
+    var jsxify = require('gulp-jsxify');
 
 gulp.task('default', function() {
     
